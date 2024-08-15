@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campfire</title>
     <link href="output.css" rel="stylesheet">
     <script src="index2.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -442,6 +442,70 @@
             </div>
         </div>
     </div>
+    
+    <!-- comment -->
+    <div class="relative flex w-screen h-128">
+
+        <!-- image bg -->
+        <div class="top-0 left-0 absolute w-screen h-full">
+            <img src="../images/comment2.jpg" class="blur-xs w-full h-full">
+        </div>
+
+        <!-- guest say -->
+        <div class="gap-8 w-248 mx-auto relative place-items-center grid grid-cols-2">
+
+            <!-- comment review -->
+            <div class="rounded-xl p-4 bg-white flex flex-col h-fit">   
+                <!-- star -->
+                <div class="my-4 text-yellow-600 flex">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+
+                <!-- comment -->
+                <p class="mb-6 text-sm italic font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores minima error, atque obcaecati quis cum ullam eius 
+                    rem similique nisi dolorem laudantium temporibus sapiente 
+                    quidem quaerat aliquam eaque consequuntur. Perferendis.
+                </p>
+
+                <!-- profile -->
+                <div class="flex justify-between">
+                    <div class="gap-3 flex">
+                        <img class="w-14 h-14 rounded-full" src="../images/profile.jpg">
+                        <div class="flex flex-col">
+                            <h2 class="text-lg font-bold">Green Fish</h2>
+                            <p class="font-light italic">Fisher</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center text-yellow-500 text-5xl">
+                        <i class='bx bxs-quote-right'></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- guest say what -->
+            <div class="flex flex-col h-fit">
+                <p class="text-xs text-white font-bold uppercase">testimonials</p>
+                <h2 class="mt-2 text-white font-bold text-5xl">What <span class="text-yellow-400">Guests</span> Say About Us</h2>
+                <p class="text-md font-bold text-white mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores minima error, atque obcaecati quis cum ullam eius 
+                    rem similique nisi dolorem laudantium temporibus sapiente 
+                    quidem quaerat aliquam eaque consequuntur. Perferendis.
+                </p>
+                <button class="self-start px-4 py-2 rounded-lg mt-8 duration-500 hover:bg-yellow-700 uppercase font-bold text-white bg-yellow-500">
+                    all testimonials
+                </button>
+            </div>
+        </div>
+    </div>
+
     
     
 </body>
