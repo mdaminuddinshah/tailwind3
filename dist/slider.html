@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="slider.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <div>
+        <div id="imgs" class="relative flex items-center justify-center h-screen w-fit">
+            <div class="item p-4 border-2 border-black w-screen h-screen">
+                <img src="../images/camp-moon.jpg" class="w-full h-full">
+            </div>
+            <div class="item p-4 border-2 border-black w-screen h-screen">
+                <img src="../images/camp-fire.jpg" class="w-full h-full">
+            </div>
+            <div class="item p-4 border-2 border-black w-screen h-screen">
+                <img src="../images/bg1.jpg" class="w-full h-full">
+            </div>
+            <div class="item p-4 border-2 border-black w-screen h-screen">
+                <img src="../images/bg2.jpg" class="w-full h-full">
+            </div>
+        </div>
+
+        <div class="text-5xl justify-between w-screen text-white absolute flex top-1/2">
+            <div id="prev" class="hover:bg-gray-700 duration-500 bg-gray-500 rounded-full flex absolute left-10">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+            <div id="next" class="hover:bg-gray-700 duration-500 bg-gray-500 rounded-full flex absolute right-10">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

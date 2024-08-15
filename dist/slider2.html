@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="slider2.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="relative overflow-x-hidden mx-auto w-248 h-80 lists border-2 border-amber-300">  
+            <!-- imagesq -->
+            <div id="lists" class="absolute flex h-full w-fit">
+                <div class="items w-248 h-full">
+                    <img class="w-full h-full" src="../images/camp-fire.jpg">
+                </div>
+                <div class="items w-248 h-full">
+                    <img class="w-full h-full" src="../images/camp-moon.jpg">
+                </div>
+                <div class="items w-248 h-full">
+                    <img class="w-full h-full" src="../images/camp-fire.jpg">
+                </div>
+                <div class="items w-248 h-full">
+                    <img class="w-full h-full" src="../images/camp-moon.jpg">
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="absolute flex justify-between w-full top-1/2">
+                <div id="prev" class="duration-500 hover:bg-gray-700 bg-gray-500 rounded-r-md text-3xl text-white left-8">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+                <div id="next" class="duration-500 hover:bg-gray-700 bg-gray-500 rounded-l-md text-3xl text-white right-8">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

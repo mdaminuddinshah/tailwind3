@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+   <style>
+        @keyframes okay {
+            0% {
+                transform: rotate(45deg);
+                background-color: rgb(241, 241, 81);
+            }
+            25% {
+                transform: rotate(90deg);
+                background-color: rgb(240, 88, 88);
+            }
+            50% {
+                transform: rotate(180deg);
+                background-color: rgb(92, 92, 250);
+            }
+            75% {
+                transform: rotate(270deg);
+                background-color: rgb(93, 233, 93);
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: rgb(245, 178, 55);
+            }
+        }
+
+        #amin:hover {
+            animation: okay 2s ease;
+        }
+   </style>
+</head>
+<body class="flex flex-col">
+    <div class="flex gap-12">
+        <div id="amin" class=" w-40 h-40 bg-gray-300">
+            rotate from 45deg to 360deg
+        </div>
+        <div class="hover:animate-complexAnimation bg-gray-500 w-52 h-52">
+    
+        </div>
+    </div>
+    
+    <div class="gap-12 flex-wrap flex justify-center items-center">
+        <div class="border-2 hover:scale-x-50 duration-700 bg-amber-300 w-52 h-52">
+            scale-x
+        </div>
+        <div class="hover:scale-y-50 duration-700 bg-amber-300 w-52 h-52">
+            scale-y
+        </div>
+        <div class="hover:rotate-45 duration-700 bg-amber-300 w-52 h-52">
+            rotate-45
+        </div>
+        <div class="hover:-translate-y-1/2 duration-700 bg-amber-300 w-52 h-52">
+            translate-x-2/4
+        </div>
+        <div class="hover:-translate-x-2/4 hover:translate-y-2/4 duration-700 bg-amber-300 w-52 h-52">
+            <p>translate-x-2/4</p>
+            <p>translate-y-2/4</p>
+        </div>
+        <div class="hover:-skew-x-12 duration-700 bg-amber-300 w-52 h-52">
+            <p>-skew-x-12</p>
+            
+        </div>
+        <div class="hover:animate-spin bg-amber-300 w-52 h-52">
+            <p>animate-spin</p>
+        </div>
+        <div class="animate-ping bg-amber-300 w-52 h-52">
+            <p>animate-ping</p>
+        </div>
+        <div class="animate-pulse bg-amber-300 w-52 h-52">
+            <p>animate-pulse</p>
+        </div>
+        <div class="animate-bounce bg-amber-300 w-52 h-52">
+            <p>animate-bounce</p>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

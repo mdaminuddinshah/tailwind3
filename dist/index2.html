@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="index2.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Ensure no overflow at the root level */
+    }
+
+    html::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background-color: rgba(1,1,1);
+    }
+
+    html::-webkit-scrollbar-track {
+        background-color: rgba(1,1,1,0.2);
+    }
+
+    </style>
+</head>
+<body class="overflow-hidden ">
+    <div class="overflow-x-hidden  relative w-screen h-screen">
+        <!-- images -->
+        <div id="slider" class="blur-xs flex absolute w-fit h-screen">
+            <div class="list w-screen h-screen">
+                <img class="w-full h-full" src="../images/campm2.jpg">
+            </div>
+            <div class="list w-screen h-screen">
+                <img class=" w-full h-full" src="../images/camp-fire.jpg">
+            </div>
+            <div class="list w-screen h-screen">
+                <img class="w-full h-full" src="../images/campm4.jpg">
+            </div>
+            <div class="list w-screen h-screen">
+                <img class="w-full h-full" src="../images/campm5.jpg">
+            </div>
+            <div class="list w-screen h-screen">
+                <img class="w-full h-full" src="../images/campn2.jpg">
+            </div>
+            <div class="list w-screen h-screen">
+                <img class="w-full h-full" src="../images/campn1.jpg">
+            </div>
+        </div>
+
+        <!-- header -->
+        <div id="header" class="flex absolute top-28 md:top-1/4 text-white left-20">
+            <div class="para w-screen">
+                <p class=" my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class=" text-yellow-500 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+            <div class=" para w-screen">
+                <p class=" my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class="text-orange-400 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+            <div class="para w-screen">
+                <p class="text-gray-400 my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class="text-teal-300 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+            <div class="para w-screen">
+                <p class=" my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class="text-red-600 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+            <div class="para w-screen">
+                <p class=" my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class="text-green-400 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+            <div class="para w-screen">
+                <p class=" my-2 text-xl font-mono font-semibold">Travel with your soul</p>
+                <h1 class="text-cyan-500 font-bold text-4xl md:text-6xl lg:text-7xl w-2/3 font-mono">Experience Earth's magic with your soulmate</h1>
+                <p class=" my-4 font-mono font-semibold text-xl">Travel with ease</p>
+            </div>
+        </div>
+        
+        
+
+        <!-- nav -->
+        <div class="flex justify-between items-center absolute top-0 bg-white w-screen">
+
+            <!-- logo -->
+            <div class="w-72">
+                <img class="cursor-pointer w-10 h-10 md:w-20 md:h-20" src="../images/logo1.png">
+            </div>
+
+            <!-- navigation link -->
+             <div class="text-sm hidden font-semibold lg:flex justify-center gap-10">
+                 <div class="">
+                    <a class="cursor-pointer uppercase">home</a>
+                 </div>
+                 <div class="">
+                    <a class="cursor-pointer uppercase">home</a>
+                 </div>
+                 <div class="">
+                    <a class="cursor-pointer uppercase">home</a>
+                 </div>
+                 <div class="">
+                    <a class="cursor-pointer uppercase">home</a>
+                 </div>
+                 <div class="">
+                    <a class="cursor-pointer uppercase">home</a>
+                 </div>
+             </div>
+         
+            <!-- sign in -->
+            <div class="uppercase text-sm font-semibold hidden lg:justify-center lg:flex gap-4 w-72">
+                <a class=" cursor-pointer">sign in</a>
+                <p>|</p>
+                <a class=" cursor-pointer">sign up</a>
+                <p>|</p>
+                <div class="flex gap-2 items-center">
+                        <i class=' cursor-pointer text-lg bx bxl-facebook-square'></i>
+                        <i class='text-xl  cursor-pointer bx bxl-youtube' ></i>
+                        <i class='text-lg  cursor-pointer bx bxl-tiktok' ></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- arrow -->
+        <div class="cursor-pointer absolute w-full top-1/2 text-white text-2xl md:text-5xl">
+            <div id="prev" class="duration-500 hover:bg-red-700 rounded-r-xl absolute left-0">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+            <div id="next" class="duration-500 hover:bg-red-700 rounded-l-xl absolute right-0">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+        </div>
+
+        <!-- cart -->
+        <div class="cursor-pointer z-50 fixed top-1/3 hover:w-20 w-10 duration-700 right-0 rounded-l-md bg-white p-2">
+            <i class='text-red-500 text-2xl bx bxs-cart'></i>
+        </div>
+    </div>
+
+    <!-- <header class="mx-4 p-4 -mt-10 bg-white">
+        <div class="grid grid-col-3">
+            <div class="flex">
+                <img src="">
+                <div class="flex flex-col">
+                    <h2></h2>
+                    <a></a>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- facilities -->
+    <div class="relative flex pt-32 w-screen bg-gray-100">
+
+        <!-- stiker -->
+        <div class="hadow-2xl right-0 w-1/3 h-24 flex justify-evenly rounded-l-xl -top-12 bg-yellow-600 absolute">
+            <div class="z-10 flex flex-col items-center justify-center">
+                <div class="flex text-white font-bold items-start">
+                    <h2 class="text-3xl">112</h2>
+                    <p class="text-xs">+</p>
+                </div>
+                <div>
+                    <p class="text-xs text-white">Foods</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex text-white font-bold items-start">
+                    <h2 class="text-3xl">72</h2>
+                    <p class="text-xs">+</p>
+                </div>
+                <div>
+                    <p class="text-xs text-white">Camps Site</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex text-white font-bold items-start">
+                    <h2 class="text-3xl">14</h2>
+                    <p class="text-xs uppercase">th</p>
+                </div>
+                <div>
+                    <p class="text-xs text-white">Working Years</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex text-white font-bold items-start">
+                    <h2 class="text-3xl">1,800</h2>
+                    <p class="text-xs">+</p>
+                </div>
+                <div>
+                    <p class="text-xs text-white">Guests Arrived</p>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class=" items-center mx-auto w-272 flex flex-col">
+            <p class="py-4 uppercase text-yellow-600 font-bold text-xs">accommondations</p>
+            <h2 class="text-3xl md:w-full w-2/3 text-center font-bold">We Provide The <span class="text-yellow-600">Best Facilities</span></h2>
+            <p class="w-2/3 xl:w-full pb-8 pt-5 text-center font-light text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Officiis ipsum officia quod? Sequi eveniet excepturi eos voluptate? 
+                Laboriosam officia obcaecati harum, deserunt iusto illo.
+            </p>
+            <div class="gap-6 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4">
+                <img class="shadow-2xl cursor-pointer rounded-2xl w-72 h-96" src="../images/camp_site_1.jpg">
+                <img class="shadow-2xl cursor-pointer rounded-2xl w-72 h-96" src="../images/camp_site_2.jpg">
+                <img class="shadow-2xl cursor-pointer rounded-2xl w-72 h-96" src="../images/camp_site_3.jpg">
+                <img class="shadow-2xl cursor-pointer rounded-2xl w-72 h-96" src="../images/camp_site_4.jpg">
+            </div>
+            <button class="hover:bg-yellow-700 duration-500 mt-8 mb-12 px-5 py-2 rounded-lg cursor-pointer text-sm font-bold uppercase text-white bg-yellow-600">all accommondations</button>
+        </div>
+    </div>
+
+    <!-- varieties -->
+    <div class="overflow-hidden relative w-screen">
+            <img class="absolute w-full" src="../images/Gemstone Ivory Matt Porcelain _ Mandarin Stone.jpg">
+            <div class="py-20">
+                <div class="relative w-248 h-fit mx-auto justify-end flex">
+                    <!-- sticker -->
+                    <div class="hover:bg-yellow-700 duration-500 cursor-pointer shadow-2xl rounded-xl py-8 items-center gap-4 top-10 -left-10 w-60 absolute flex flex-col bg-yellow-600">
+                        
+                        <!-- 1 -->
+                        <div class="flex justify-evenly">
+                            <img class=" scale-x-[-1] w-14 h-16" src="../images/tent_icon_3.png">
+                            <div class="flex flex-col text-white w-1/2">
+                                <h2 class="text-md font-bold">Standard Tent</h2>
+                                <p class="self-start text-xs w-full">
+                                    minus rerum obcaecati distinctio 
+                                </p>
+                            </div>
+                        </div>
+        
+                        <!-- 2 -->
+                        <div class="flex justify-evenly">
+                            <img class="w-14 h-16" src="../images/tent_icon_2.png">
+                            <div class="flex flex-col text-white w-1/2">
+                                <h2 class="text-md font-bold">Safari Tent</h2>
+                                <p class="self-start text-xs w-full">
+                                    minus rerum obcaecati distinctio 
+                                </p>
+                            </div>
+                        </div>
+        
+                        <!-- 3 -->
+                        <div class="flex justify-evenly ">
+                            <img class=" scale-x-[-1] w-12 h-16" src="../images/dome_2.png">
+                            <div class="flex flex-col text-white w-1/2">
+                                <h2 class="text-md font-bold">Modern Dome</h2>
+                                <p class="self-start text-xs w-full">
+                                    minus rerum obcaecati distinctio 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- picture -->
+                    <div class="flex w-120">
+                        <img class="cursor-pointer shadow-2xl rounded-2xl w-112 h-128" src="../images/places_1.jpg">
+                    </div>
+        
+                    <!-- paras -->
+                    <div class="w-96 flex justify-center flex-col">
+                        <p class="text-sm text-yellow-600 uppercase">about places</p>
+                        <h2 class="my-2 text-4xl font-bold w-2/3">With Us You Can Be <span class="text-yellow-600">Closer</span> to Nature</h2>
+                        <p class="text-lg w-full font-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Impedit fuga ullam sint quia culpa quidem repudiandae at ratione 
+                            cupiditate, delectus, minus rerum obcaecati distinctio et 
+                            magnam aliquid commodi. Placeat, a.
+                        </p>
+                        <button class="hover:bg-yellow-700 duration-500 my-6 uppercase text-sm font-bold text-white bg-yellow-600 self-start px-4 py-2 rounded-md">more about us</button>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+
+    <!-- partner -->
+    <div class="py-12 flex items-center flex-col bg-gray-100">
+        <p class=" text-md font-light uppercase text-yellow-600">our partner</p>
+        <h2 class="mb-4 mt-1 text-3xl font-bold">Our <span class="text-yellow-600">Cooperation</span> Partner</h2>
+        <p class="mb-6 w-1/2 text-center font-light text-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Exercitationem distinctio tempore et labore vitae quidem 
+            quisquam sit aperiam soluta. Dolorem corrupti quod fugit 
+            nihil distinctio eius, ut alias pariatur illum.
+        </p>
+        <div class="flex gap-12">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/adobe.svg">
+                <p>Adobe</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/airbnb.svg">
+                <p>Airbnb</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/amazon.svg">
+                <p>Amazon</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/amd.svg">
+                <p>AMD</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/alby.svg">
+                <p>Alby</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="../images/aircanada.svg">
+                <p>Air Canada</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- booking -->
+    <div class="relative w-screen h-fit">
+
+        <img  class="absolute w-full h-full" src="../images/Gemstone Ivory Matt Porcelain _ Mandarin Stone.jpg">
+        <div class=" py-20 relative flex mx-auto  w-248 justify-between">
+            
+            <!-- titles -->
+            <div class="flex flex-1 flex-col">
+                <p class="text-sm font-bold uppercase text-yellow-600">why choose us</p>
+                <h2 class="my-3 font-bold text-4xl">Get The Best Camping <span class="text-yellow-600">Experience</span> With Us</h2>
+                <p class="text-md w-5/6 font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Assumenda aut quia itaque impedit labore adipisci laudantium 
+                    inventore dolorem ex quo harum, unde sint accusamus 
+                    reiciendis quidem eligendi sed laboriosam vel.
+                </p>
+                <div class="ml-12 mt-4 gap-8 grid grid-rows-1 w-2/3">
+                    <ul class="list-disc">
+                        <li>24 Hours Service</li>
+                        <li>Care and Society</li>
+                        <li>Affortable Prices</li>
+                        <li>Playground Kids</li> 
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- picture -->
+            <div class=" justify-end flex flex-1 w-fit h-120">
+                <img class="w-112 h-full rounded-2xl" src="../images/experience.jpg">
+            </div>
+
+            <!-- form -->
+            <div class=" top-1/2 left-1/2 -translate-x-1/2 shadow-xl rounded-xl p-8 absolute bg-gray-100">
+                <form class="text-center">
+                    <input class="border-2 border-yellow-600 w-full p-2 rounded-md" type="text" placeholder="Your Name">
+                    <br>
+                    <select id="options" name="option" class="border-2 border-yellow-600 mt-2 text-gray-400 block w-full p-2 rounded-md shadow-sm">
+                        <option disabled selected>Accommondations Type</option>
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                    </select>        
+                    <input class="border-2 border-yellow-600 p-2 rounded-md mt-2 mr-2" type="text" placeholder="City">
+                    <input class="p-2 rounded-md mt-2 border-2 border-yellow-600"  type="text" placeholder="Time">        
+                    <br>
+                    <button class="mt-4 py-2 px-4 rounded-lg text-white bg-yellow-600 uppercase">book now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- adventure -->
+    <div class="bg-gray-100 py-16 relative flex flex-col items-center">
+        <p class="text-xs font-bold uppercase text-yellow-600">adventure</p>
+        <h2 class="my-4 text-4xl font-bold">Enjoy Your <span class="text-yellow-600">Adventure</span> here</h2>
+        <p class="mb-4 text-sm font-light text-center w-1/2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Amet assumenda nulla nobis cumque perferendis. Quibusdam 
+            facere totam beatae at libero aut fuga aperiam, autem 
+            consequatur inventore maiores voluptatum nihil voluptatibus.
+        </p>
+        <div class="grid gap-4 grid-cols-3 grid-rows-2">
+            <!-- 1 -->
+            <div class="bg-white py-4 rounded-lg border-2 items-center flex flex-col">
+                <img class="w-16 h-16" src="../images/atv.png">
+                <h3 class="text-sm mt-2 font-bold">ATV Trip</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-white py-4 rounded-lg border-2 items-center flex flex-col">
+                <img class="w-16 h-16" src="../images/mountain_biking.png">
+                <h3 class="text-sm mt-2 font-bold">Mountain Biking</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="border-2 items-center bg-white py-4 rounded-lg flex flex-col">
+                <img class="w-14 h-14" src="../images/horseback_riding.png">
+                <h3 class="text-sm mt-2 font-bold">Horse Riding</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="border-2 items-center bg-white py-4 rounded-lg flex flex-col">
+                <img class="w-14 h-14" src="../images/rafting.png">
+                <h3 class="text-sm mt-2 font-bold">Rafting</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+
+            <!-- 5 -->
+            <div class="border-2 items-center flex flex-col bg-white py-4 rounded-lg">
+                <img class="w-14 h-14" src="../images/fishing.png">
+                <h3 class="text-sm mt-2 font-bold">Fishing</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+
+            <!-- 6 -->
+            <div class="border-2 items-center flex flex-col bg-white py-4 rounded-lg">
+                <img class="w-14 h-14" src="../images/trekking.png">
+                <h3 class="text-sm mt-2 font-bold">Trekking</h3>
+                <p class="text-xs font-light w-3/4 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
