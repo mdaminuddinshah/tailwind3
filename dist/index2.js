@@ -48,3 +48,82 @@ prev.addEventListener("click", () => {
     let checkheader = para[paras].offsetLeft + initialOffset;
     header.style.left = -checkheader + 'px';
 });
+
+// carousel
+
+let imgs = document.querySelectorAll(".imgs");
+let prev2 = document.querySelector("#prev2");
+let next2 = document.querySelector("#next2");
+let carousel = document.querySelector("#carousel");
+let page = document.querySelectorAll(".page");
+let context = document.querySelectorAll(".context");
+let saiz = document.querySelectorAll(".saiz");
+
+let gambar = 3;
+let beza_gambar = 460;
+
+next2.addEventListener("click", () => {
+    
+    if(gambar >= 0){
+        context[gambar].classList.add("hidden");
+        context[gambar].classList.remove("flex");
+        page[gambar].classList.add("blur-sm");
+        page[gambar].classList.add("justify-center");
+        saiz[gambar].classList.remove("w-40", "h-40");
+        saiz[gambar].classList.add("w-32", "h-32");
+    }
+    
+    if(gambar < imgs.length -1){
+        gambar +=1;
+    };
+
+    if(gambar){
+        context[gambar].classList.remove("hidden");
+        context[gambar].classList.add("flex");
+        page[gambar].classList.remove("blur-sm");
+        page[gambar].classList.remove("justify-center");
+        saiz[gambar].classList.remove("w-32", "h-32");
+        saiz[gambar].classList.add("w-40", "h-40");
+    }
+
+    let checkWide2 = imgs[gambar].offsetLeft;
+    console.log(checkWide2);
+    
+    carousel.style.left = (-checkWide2 + beza_gambar) + "px";
+    console.log(carousel.style.left = (-checkWide2 + beza_gambar) + "px");
+    
+
+
+});
+
+prev2.addEventListener("click", () => {
+
+    if(gambar){
+        context[gambar].classList.add("hidden");
+        context[gambar].classList.remove("flex");
+        page[gambar].classList.add("blur-sm");
+        page[gambar].classList.add("justify-center");
+        saiz[gambar].classList.remove("w-40", "h-40");
+        saiz[gambar].classList.add("w-32", "h-32");
+        console.log(gambar);
+    }
+
+    if(gambar > 0){
+        gambar -=1;
+    };
+
+    context[gambar].classList.remove("hidden");
+    context[gambar].classList.add("flex");
+    page[gambar].classList.remove("blur-sm");
+    console.log(gambar);
+    page[gambar].classList.remove("justify-center");
+    saiz[gambar].classList.remove("w-32", "h-32");
+    saiz[gambar].classList.add("w-40", "h-40");
+
+    let checkWide3 = imgs[gambar].offsetLeft;
+    console.log(checkWide3);
+    carousel.style.left = (-checkWide3 + beza_gambar) + "px";
+    console.log(carousel.style.left = (-checkWide3 + beza_gambar) + "px");
+    
+});
+

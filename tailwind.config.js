@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       blur: {
         'xs': '1px',
+        'sm': '2px'
       },
       keyframes: {
         complexAnimation: {
